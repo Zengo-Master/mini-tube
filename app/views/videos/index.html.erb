@@ -1,0 +1,11 @@
+<div class="videos-row">
+  <% @videos.each do |video| %>
+    <div class="one-video">
+
+      <div class="title">
+        <%= link_to video.title, video_path(video.id) %>
+      </div>
+
+    </div>
+  <% end %>
+</div>
