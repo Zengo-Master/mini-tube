@@ -1,0 +1,17 @@
+<div class="videos-row">
+  <% @videos.each do |video| %>
+    <div class="one-video">
+      <% if @video.video.attached? %>
+
+        <div class="video">
+          <video src="<%= rails_blob_path(@video.video) %>" type="video/mp4" controls></video>
+        </div>
+
+        <div class="title">
+          <%= video.title %>
+        </div>
+
+      <% end %>
+    </div>
+  <% end %>
+</div>
