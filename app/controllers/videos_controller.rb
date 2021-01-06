@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
 
   def index
-    @videos = Videos.all.order('created_at DESC')
+    @videos = Video.all.order('created_at DESC')
   end
 
   def new
