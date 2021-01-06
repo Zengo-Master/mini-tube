@@ -6,6 +6,7 @@ mini-tube
 
 # 本番環境
 ## Heroku
+https://mini-tube.herokuapp.com/
 
 # 使用技術（開発環境）
 Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/Visual Studio Code
