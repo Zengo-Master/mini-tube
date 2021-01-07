@@ -3,10 +3,10 @@
     <div class="one-video">
 
       <div class="video">
-        <video src="<%= rails_blob_path(@video.video) %>" type="video/mp4" controls></video>
+        <video src="<%= rails_blob_path(@video.video) %>" type="video/mp4" controls width="800" height="450" ></video>
       </div>
 
-      <div class="title">
+      <div class="show-title">
         <%= @video.title %>
       </div>
 

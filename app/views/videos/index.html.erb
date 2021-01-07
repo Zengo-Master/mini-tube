@@ -3,11 +3,11 @@
     <div class="one-video">
 
       <div class="image">
-        <%= image_tag video.image.variant(resize:'800x850') if video.image.attached? %>
+        <%= image_tag video.image.variant(resize:'480x270') if video.image.attached? %>
       </div>
 
       <div class="title">
-        <%= link_to video.title, video_path(video.id) %>
+        <%= link_to video.title, video_path(video.id), class: 'title' %>
       </div>
 
     </div>
