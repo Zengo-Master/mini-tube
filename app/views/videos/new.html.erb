@@ -8,9 +8,14 @@
       </div>
 
       <div class="field">
-        <%= f.label :title, 'タイトル' %><span class="hissu">必須</span><br />
+        <%= f.label :title, 'タイトル', class: '' %><span class="hissu">必須</span><br />
         <%= f.text_field :title, placeholder: '', class: "inner" %>
-      </div><br>
+      </div>
+
+      <div class="field">
+        <%= f.label :image, 'サムネイル', class: '' %><span class="hissu">必須</span><br />
+        <%= f.file_field :image, class: "inner" %>
+      </div><br><br>
 
       <div class="send">
         <%= f.submit "アップロード", class: 'send-btn' %>
