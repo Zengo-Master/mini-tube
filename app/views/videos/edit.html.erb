@@ -1,0 +1,26 @@
+<div class="whole">
+  <div class="container">
+    <%= form_with(model: @video, class: 'new-field', local: true) do |f| %>
+
+      <div class="field">
+        <%= f.label :video, '動画', class: 'video-contents' %><span class="hissu">必須</span><br />
+        <%= f.file_field :video, class: "inner" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :title, 'タイトル', class: '' %><span class="hissu">必須</span><br />
+        <%= f.text_field :title, placeholder: '', class: "inner" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :image, 'サムネイル', class: '' %><span class="hissu">必須</span><br />
+        <%= f.file_field :image, class: "inner" %>
+      </div><br><br>
+
+      <div class="send">
+        <%= f.submit "更新", class: 'send-btn' %>
+      </div><br>
+
+    <% end %>
+  </div>
+</div>

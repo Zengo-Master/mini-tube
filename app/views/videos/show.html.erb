@@ -12,4 +12,13 @@
 
     </div>
 
+    <div class="user_btn">
+      <div class="edit">
+        <%= link_to "編集", edit_video_path(@video.id), method: :get, class: "edit-btn" %>
+      </div>
+      <div class="destroy">
+        <%= link_to "削除", video_path(@video.id), method: :delete,  class: "destroy-btn" %>
+      </div>
+    </div>
+
 </div>
