@@ -9,12 +9,6 @@ class VideosController < ApplicationController
     @video = Video.new
   end
 
-  # def create
-  #   @video = Video.new(video_params)
-  #   @video.create
-  #   redirect_to @video
-  # end
-
   def create
     @video = Video.create(video_params)
     if @video.valid?
