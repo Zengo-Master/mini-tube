@@ -7,4 +7,12 @@ class Video < ApplicationRecord
     validates :title
     validates :image
   end
+
+  def self.search(search)
+    if search != ""
+      Video.where('title LIKE(?)', "%#{search}%")
+    else
+      Video.all
+    end
+  end
 end

@@ -23,8 +23,12 @@ class VideosController < ApplicationController
 
   end
 
+  def search
+    @videos = Video.search(params[:keyword])
+  end
+
   def edit
-    
+
   end
 
   def destroy
