@@ -6,11 +6,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 20px;
 }
 
 .search-input {
-  font-size: large;
+  font-size: x-large;
+}
+
+.search-btn {
+  font-size: larger;
 }
 
 .one-video {
@@ -31,10 +35,12 @@
   font-size: xx-large;
   color: blue;
   text-decoration: underline;
+  margin: 10px;
 }
 
 .show-title {
   font-size: xx-large;
+  margin: 10px;
 }
 
 .field {
