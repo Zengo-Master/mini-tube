@@ -18,3 +18,6 @@ Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/Visual Studio Code
 | Column           | Type       | Options     |
 | ---------------- | ---------- | ----------- |
 | title            | string     | null: false |
+
+# ユーザーのARN
+arn:aws:iam::565371736758:user/minitube
