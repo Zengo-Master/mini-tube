@@ -11,22 +11,24 @@
 
   <body>
 
-    <header>
-      <div class="header_contents">
-        <p class="app-title"><a href="/">神手順パラダイス</a></p>
-          <div class="post-btn">
-            <%= link_to "投稿", new_video_path, class: "post" %>
-          </div>
-      </div>
-    </header>
+    <div class="wrapper">
+      <header>
+        <div class="header_contents">
+          <p class="app-title"><a href="/">神手順パラダイス</a></p>
+            <div class="post-btn">
+              <%= link_to "投稿", new_video_path, class: "post" %>
+            </div>
+        </div>
+      </header>
 
-      <%= yield %>
+        <%= yield %>
 
-    <footer>
-      <p>
-        Copyright MiniTube.
-      </p>
-    </footer>
+      <footer>
+        <p>
+          Copyright MiniTube.
+        </p>
+      </footer>
+    </div>
 
   </body>
 

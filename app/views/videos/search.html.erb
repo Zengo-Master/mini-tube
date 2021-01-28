@@ -1,19 +1,22 @@
-<%= form_with(url: search_videos_path, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "タイトル検索", class: "search-input" %>
-  <%= form.submit "🔎", class: "search-btn" %>
-<% end %>
-<div class="videos-row">
-  <% @videos.each do |video| %>
-    <div class="one-video">
-
-      <div class="image">
-        <%= image_tag video.image.variant(resize:'480x270') if video.image.attached? %>
-      </div>
-
-      <div class="title">
-        <%= link_to video.title, video_path(video.id), class: 'title' %>
-      </div>
-
-    </div>
+<div class="inner">
+  <%= form_with(url: search_videos_path, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form.text_field :keyword, placeholder: "タイトル検索", class: "search-input" %>
+    <%= form.submit "🔎", class: "search-btn" %>
   <% end %>
+
+  <div class="videos-row">
+    <% @videos.each do |video| %>
+      <div class="one-video">
+
+        <div class="image">
+          <%= image_tag video.image.variant(resize:'700x700') if video.image.attached? %>
+        </div>
+
+        <div class="title">
+          <%= link_to video.title, video_path(video.id), class: 'title' %>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
 </div>
