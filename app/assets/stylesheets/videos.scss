@@ -43,6 +43,10 @@
   margin: 20px;
 }
 
+.kifu-text {
+  margin-bottom: 20px;
+}
+
 .container {
   margin-top: 50px;
   height: 700px;
@@ -50,7 +54,7 @@
 
 .field {
   font-size: 30px;
-  margin: 10px 50px;
+  margin: 5px 50px;
 }
 
 .send-btn {
@@ -67,6 +71,16 @@
   color: white;
   font-weight: bold;
   background-color: red;
+  border-radius: 10%;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.ninni {
+  font-size: 25px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: black;
   border-radius: 10%;
   padding: 2px;
   margin-left: 10px;

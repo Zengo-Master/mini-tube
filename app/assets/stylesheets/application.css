@@ -66,12 +66,12 @@ a {
 
 footer {
   font-size: 40px;
-  margin-top: 15px;
+  margin-top: 150px;
   padding: 10px 0px;
   border-top: 1px solid black;
   text-align: center;
   background-color: aliceblue;
-  height: 600px;
+  height: 500px;
   width: 100%;
 	bottom:0;
 }

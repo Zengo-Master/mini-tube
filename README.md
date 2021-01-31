@@ -15,9 +15,10 @@ Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/Visual Studio Code
 
 ## users テーブル
 
-| Column           | Type       | Options     |
-| ---------------- | ---------- | ----------- |
-| title            | string     | null: false |
+| Column | Type       | Options     |
+| -------| ---------- | ----------- |
+| title  | string     | null: false |
+| kifu   | text       |             |  
 
 # ユーザーのARN
 arn:aws:iam::565371736758:user/minitube

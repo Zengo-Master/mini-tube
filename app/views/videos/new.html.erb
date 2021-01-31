@@ -15,7 +15,12 @@
       <div class="field">
         <%= f.label :image, '③局面', class: '' %><span class="hissu">必須</span><br />
         <%= f.file_field :image, class: "inner" %>
-      </div><br><br>
+      </div>
+
+      <div class="field">
+        <%= f.label :kifu, '④局面テキスト' %><span class="ninni">任意</span><br />
+        <%= f.text_area :kifu, placeholder: 'kif形式で貼り付け', size: "25x5", class: "inner" %>
+      </div>
 
       <div class="send">
         <%= f.submit "アップロード", class: 'send-btn' %>
