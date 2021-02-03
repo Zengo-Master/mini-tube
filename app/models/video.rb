@@ -6,7 +6,6 @@ class Video < ApplicationRecord
     validates :video
     validates :title
     validates :image
-    validates :kifu
   end
 
   def self.search(search)
